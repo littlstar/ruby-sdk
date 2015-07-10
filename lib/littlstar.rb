@@ -3,6 +3,7 @@ require 'net/http'
 require 'json'
 require 'littlstar/version'
 require 'littlstar/videos'
+require 'littlstar/photos'
 
 module Littlstar
 
