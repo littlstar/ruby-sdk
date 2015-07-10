@@ -4,6 +4,7 @@ require 'json'
 require 'littlstar/version'
 require 'littlstar/videos'
 require 'littlstar/photos'
+require 'littlstar/categories'
 
 module Littlstar
 
