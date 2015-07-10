@@ -6,6 +6,7 @@ require 'littlstar/videos'
 require 'littlstar/photos'
 require 'littlstar/categories'
 require 'littlstar/channels'
+require 'littlstar/hashtags'
 
 module Littlstar
 
