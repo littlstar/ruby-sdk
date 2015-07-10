@@ -10,11 +10,11 @@ module Littlstar
     end
 
     def videos_for(id, query={})
-      Littlstar.request(:get, "/categories/#{id}/videos")
+      Littlstar.request(:get, "/categories/#{id}/videos", query)
     end
 
     def photos_for(id, query={})
-      Littlstar.request(:get, "/categories/#{id}/photos")
+      Littlstar.request(:get, "/categories/#{id}/photos", query)
     end
 
   end
