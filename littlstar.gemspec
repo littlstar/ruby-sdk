@@ -9,10 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors = ['Dominic Giglio']
   spec.email   = ['support@littlstar.com']
 
-  gem.summary     = %q{Access Littlstar API}
-  gem.description = %q{This gem defines methods for controlling your content through the Littlstar API.}
-  spec.homepage   = 'https://github.com/littlstar/ruby-sdk'
-  spec.license    = 'MIT'
+  spec.summary     = %q{Access Littlstar API}
+  spec.description = %q{This gem defines methods for controlling your content through the Littlstar API.}
+  spec.homepage    = 'https://github.com/littlstar/ruby-sdk'
+  spec.license     = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
