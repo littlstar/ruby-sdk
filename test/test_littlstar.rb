@@ -5,7 +5,7 @@ class TestLittlstar < Minitest::Test
     refute_nil ::Littlstar::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_the_truth
+    assert true
   end
 end
