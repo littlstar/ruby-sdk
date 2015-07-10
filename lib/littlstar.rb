@@ -3,6 +3,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 require 'littlstar/version'
+require 'littlstar/videos'
 
 module Littlstar
 
