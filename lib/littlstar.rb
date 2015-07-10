@@ -1,4 +1,4 @@
-require "littlstar/version"
+require 'littlstar/version'
 
 module Littlstar
   # Your code goes here...
