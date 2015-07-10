@@ -25,18 +25,22 @@ module Littlstar
     @@api_base = base
   end
 
-  def self.api_url(path='')
-    api_base + path
+  def self.api_url(path='', query={})
+    self.api_base + path + self.query_params_from(query)
+  end
+
+  def self.query_params_from(hash)
+    "?#{URI.encode(hash.map { |k,v| "#{k}=#{v}" }.join('&'))}"
   end
 
   ##
   # The request() method is the heart and soul of the library. It is responsible for taking the
   # connection details from each resource class and creating the Net::HTTP object that will
   # ultimately send the appropriate request and return the response from the Littstar API server.
-  def self.request(method, path)
+  def self.request(method, path, query)
 
     # create connection uri
-    uri  = URI.parse(self.api_url(path))
+    uri  = URI.parse(self.api_url(path, query))
 
     # create request object
     req = Net::HTTP::Get.new(uri.to_s)

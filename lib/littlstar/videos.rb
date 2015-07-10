@@ -5,28 +5,28 @@ module Littlstar
       Littlstar.request(:get, "/videos/#{id}")
     end
 
-    def all()
-      Littlstar.request(:get, '/videos')
+    def all(query={})
+      Littlstar.request(:get, '/videos', query)
     end
 
-    def sponsored()
-      Littlstar.request(:get, '/videos/sponsored')
+    def sponsored(query={})
+      Littlstar.request(:get, '/videos/sponsored', query)
     end
 
-    def featured()
-      Littlstar.request(:get, '/videos/featured')
+    def featured(query={})
+      Littlstar.request(:get, '/videos/featured', query)
     end
 
-    def latest()
-      Littlstar.request(:get, '/videos/latest')
+    def latest(query={})
+      Littlstar.request(:get, '/videos/latest', query)
     end
 
-    def vr()
-      Littlstar.request(:get, '/videos/vr')
+    def vr(query={})
+      Littlstar.request(:get, '/videos/vr', query)
     end
 
-    def comments_for(id)
-      Littlstar.request(:get, "/videos/#{id}/comments")
+    def comments_for(id, query={})
+      Littlstar.request(:get, "/videos/#{id}/comments", query)
     end
 
   end
