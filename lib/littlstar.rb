@@ -5,6 +5,7 @@ require 'littlstar/version'
 require 'littlstar/videos'
 require 'littlstar/photos'
 require 'littlstar/categories'
+require 'littlstar/channels'
 
 module Littlstar
 
